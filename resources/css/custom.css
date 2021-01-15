@@ -1,0 +1,46 @@
+.entry-content {
+    h1 {
+        @apply text-2xl;
+    }
+
+    h2 {
+        @apply text-xl;
+    }
+
+    h3 {
+        @apply text-lg;
+    }
+
+    p, ul, ol {
+        @apply mb-8;
+
+        a {
+            @apply text-blue-600 underline;
+
+            &:hover {
+                @apply no-underline;
+            }
+        }
+    }
+
+    ul {
+        li {
+            @apply list-disc list-inside;
+        }
+    }
+
+    ol {
+        li {
+            @apply list-decimal list-inside;
+        }
+    }
+}
+
+/* Page background */
+.gradient {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+/* Hide WP Admin */
+#wpadminbar {
+    display: none !important;
+}
