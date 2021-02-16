@@ -27,6 +27,13 @@
 			<?php include "template-parts/hero.php"; ?>
 		<!-- End introduction -->
 		<?php endif; ?>
+		<!-- Thumbnail -->
+		<?php if( has_post_thumbnail() && !is_front_page() ) :  
+			$featured_image = wp_get_attachment_url( get_post_thumbnail_id() );
+			?>
+			<div class="w-full h-96 bg-center bg-no-repeat bg-cover" style="background-image: url('<?php echo esc_url( $featured_image ); ?>');">
+			</div>
+		<?php endif; ?>
 
 		<?php do_action( 'tailpress_content_start' ); ?>
 

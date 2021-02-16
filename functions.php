@@ -129,3 +129,5 @@ function tailpress_nav_menu_add_li_class( $classes, $item, $args ) {
 }
 
 add_filter( 'nav_menu_css_class', 'tailpress_nav_menu_add_li_class', 1, 3 );
+
+require_once(get_template_directory().'/functions/blocks.php');
